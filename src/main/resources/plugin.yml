@@ -1,1 +1,33 @@
-
+name: DimensionForge
+version: '${project.version}'
+main: com.example.dimensionforge.DimensionForge
+api-version: '1.21'
+description: Create and manage custom dimensions (worlds) on Paper.
+commands:
+  dimension:
+    description: Manage custom dimensions
+    usage: /<command> <create|tp|list|unload|delete|givebook|setlock1> ...
+    aliases: [dim]
+    permission: dimensionforge.use
+  lock1:
+    description: Used by the Lock 1 book
+    usage: /<command>
+    permission: dimensionforge.lock
+  lock2:
+    description: Used by the Lock 2 book
+    usage: /<command>
+    permission: dimensionforge.lock
+  lock3:
+    description: Used by the Lock 3 book
+    usage: /<command>
+    permission: dimensionforge.lock
+permissions:
+  dimensionforge.use:
+    description: Use /dimension list and /dimension tp
+    default: op
+  dimensionforge.admin:
+    description: Create, unload and delete dimensions, give the lock books, set Lock 1's destination
+    default: op
+  dimensionforge.lock:
+    description: Use the lock books
+    default: true
