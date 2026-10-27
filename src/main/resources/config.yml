@@ -1,1 +1,11 @@
+# DimensionForge config.
+# The "worlds" section is managed by the plugin: dimensions created with
+# /dimension create are saved here and reloaded on every server start.
+worlds: {}
 
+# The White Palace.
+# All lock books (Lock 1, 2 and 3) teleport to the same destination for now.
+# Set it in-game: stand where you want players to arrive and run
+# /dimension setlock1. It is saved under lock1.location.
+lock1:
+  title: "Welcome to the White Palace"
